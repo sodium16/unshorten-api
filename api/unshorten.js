@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       redirect: "follow"
     });
 
-    return res.json({
+    return res.status(200).json({
       success: true,
       requested: url,
       resolved: response.url
